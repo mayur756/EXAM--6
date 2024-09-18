@@ -115,7 +115,7 @@ let userId = localStorage.getItem("id");
 
 const getUserRole = async () => {
     
-        let req = await fetch(`http://localhost:8520/tasks/${userId}`);
+        let req = await fetch(`http://localhost:8090/updtasks/${userId}`);
         let userData = await req.json();
         console.log(userData);
         
