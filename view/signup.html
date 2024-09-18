@@ -70,7 +70,7 @@
     const postData = async (user) => {
       console.log(user);
       
-    let req = await fetch("http://localhost:8520/signup", {
+    let req = await fetch("http://localhost:8090/signup", {
         method: 'POST',
         headers: { "content-type": "application/json" },
         body: JSON.stringify(user)
